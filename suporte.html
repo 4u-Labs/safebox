@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte & Ajuda - SafePass</title>
+  <link rel="icon" type="image/png" href="icon-192x192.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #090c14;
+      color: #cbd5e1;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #0f1523;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13px;
+    }
+    .nav-links a { color: #94a3b8; text-decoration: none; font-weight: 500; }
+    .nav-links a:hover, .nav-links a.active { color: #6d4aff; }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    h1 span { color: #6d4aff; }
+    .updated-date {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 24px;
+      display: block;
+    }
+    h2 {
+      color: #fff;
+      font-size: 18px;
+      margin: 28px 0 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 6px;
+    }
+    p, ul {
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    strong { color: #fff; }
+    .faq-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+    .faq-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    a { color: #6d4aff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav-links">
+      <a href="privacidade.html">Política de Privacidade</a>
+      <a href="termos.html">Termos de Uso</a>
+      <a href="suporte.html" class="active">Suporte & Contato</a>
+      <a href="index.html">Abrir Aplicativo</a>
+    </div>
+
+    <h1>Safe<span>Pass</span> — Suporte & Ajuda</h1>
+    <span class="updated-date">Central Oficial de Atendimento e Perguntas Frequentes</span>
+
+    <h2>Perguntas Frequentes (FAQ)</h2>
+
+    <div class="faq-card">
+      <div class="faq-title">❓ Como funciona a segurança e criptografia do SafePass?</div>
+      <p>O SafePass utiliza criptografia de ponta a ponta (AES-256-GCM) com derivação de chave mestra via PBKDF2 (100.000 iterações). Todos os dados são cifrados e decifrados exclusivamente no seu próprio navegador.</p>
+    </div>
+
+    <div class="faq-card">
+      <div class="faq-title">❓ O que acontece se eu esquecer minha Senha Mestra?</div>
+      <p>Por questões de privacidade Zero-Knowledge, não mantemos cópias das senhas de ninguém. Caso esqueça a senha mestra, será necessário restaurar um backup anterior exportado (<code>.safepass</code>) ou reiniciar o cofre.</p>
+    </div>
+
+    <div class="faq-card">
+      <div class="faq-title">❓ Como funciona o preenchimento automático na Extensão do Chrome?</div>
+      <p>Ao navegar em um site com tela de login, clique no ícone da extensão SafePass na barra do navegador. Os logins correspondentes serão listados automaticamente e basta clicar no botão <strong>"⚡ Preencher"</strong>.</p>
+    </div>
+
+    <div class="faq-card">
+      <div class="faq-title">❓ Como fazer backup das minhas senhas?</div>
+      <p>No SafePass Web, clique no ícone de <strong>Configurações (⚙️)</strong> no rodapé da barra lateral e selecione <strong>"Baixar Backup Seguro (.safepass)"</strong>.</p>
+    </div>
+
+    <h2>Canais de Contato com o Desenvolvedor</h2>
+    <p>Se você encontrou algum bug, precisa de auxílio ou tem sugestões de melhorias, estamos à disposição:</p>
+    <ul>
+      <li><strong>E-mail de Suporte:</strong> <a href="mailto:fbr4g4@gmail.com">fbr4g4@gmail.com</a></li>
+      <li><strong>Desenvolvedor:</strong> 4uLabs</li>
+      <li><strong>Portal Oficial:</strong> <a href="https://4u.ia.br" target="_blank">https://4u.ia.br</a></li>
+    </ul>
+  </div>
+</body>
+</html>

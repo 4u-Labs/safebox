@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade - SafePass</title>
+  <link rel="icon" type="image/png" href="icon-192x192.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #090c14;
+      color: #cbd5e1;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #0f1523;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13px;
+    }
+    .nav-links a { color: #94a3b8; text-decoration: none; font-weight: 500; }
+    .nav-links a:hover, .nav-links a.active { color: #6d4aff; }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    h1 span { color: #6d4aff; }
+    .updated-date {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 24px;
+      display: block;
+    }
+    h2 {
+      color: #fff;
+      font-size: 18px;
+      margin: 28px 0 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 6px;
+    }
+    p, ul {
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    strong { color: #fff; }
+    .badge-highlight {
+      background: rgba(109, 74, 255, 0.15);
+      border: 1px solid rgba(109, 74, 255, 0.4);
+      color: #a78bfa;
+      padding: 12px 16px;
+      border-radius: 10px;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+    a { color: #6d4aff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav-links">
+      <a href="privacidade.html" class="active">Política de Privacidade</a>
+      <a href="termos.html">Termos de Uso</a>
+      <a href="suporte.html">Suporte & Contato</a>
+      <a href="index.html">Abrir Aplicativo</a>
+    </div>
+
+    <h1>Safe<span>Pass</span> — Política de Privacidade</h1>
+    <span class="updated-date">Última atualização: 28 de agosto de 2026</span>
+
+    <div class="badge-highlight">
+      🛡️ <strong>Arquitetura Zero-Knowledge:</strong> O SafePass foi projetado com o princípio fundamental de privacidade total. Todas as suas senhas e dados confidenciais são criptografados localmente no seu próprio navegador utilizando o algoritmo militar <strong>AES-256-GCM</strong>.
+    </div>
+
+    <h2>1. Coleta e Uso de Dados</h2>
+    <p>O <strong>SafePass</strong> (WebApp e Extensão para Google Chrome) <strong>NÃO coleta, não armazena e não transmite</strong> quaisquer dados pessoais, senhas mestras, credenciais, histórico de navegação ou informações sensíveis para servidores externos ou terceiros.</p>
+
+    <h2>2. Criptografia no Cliente (Client-Side Encryption)</h2>
+    <p>Todos os registros guardados no seu cofre (incluindo nomes de usuário, senhas, chaves 2FA, notas e cartões) são cifrados no seu dispositivo antes de qualquer armazenamento local via <code>chrome.storage.local</code> ou <code>localStorage</code>.</p>
+    <ul>
+      <li><strong>Derivação de Chave:</strong> PBKDF2-SHA256 com 100.000 iterações e salt aleatório.</li>
+      <li><strong>Cifra:</strong> AES-GCM de 256 bits com Vetor de Inicialização (IV) exclusivo por operação.</li>
+      <li><strong>Acesso:</strong> Apenas você, por meio da sua Senha Mestra, possui a chave de decifragem.</li>
+    </ul>
+
+    <h2>3. Permissões da Extensão do Google Chrome</h2>
+    <p>A extensão utiliza apenas as permissões estritamente necessárias para a sua função principal:</p>
+    <ul>
+      <li><strong>Storage:</strong> Usado exclusivamente para salvar seu cofre criptografado localmente no navegador.</li>
+      <li><strong>ActiveTab:</strong> Usado para identificar o domínio do site atualmente aberto na aba ativa e permitir o preenchimento automático das credenciais correspondentes.</li>
+    </ul>
+
+    <h2>4. Compartilhamento de Informações</h2>
+    <p>Não compartilhamos, vendemos ou transferimos quaisquer dados de usuários, uma vez que não temos acesso a nenhum dado armazenado no cofre.</p>
+
+    <h2>5. Contato</h2>
+    <p>Para dúvidas sobre esta política de privacidade ou sobre a segurança do SafePass, entre em contato:</p>
+    <p>Desenvolvedor: <strong>4uLabs</strong><br>
+    Portal: <a href="https://4u.ia.br" target="_blank">https://4u.ia.br</a><br>
+    E-mail: <a href="mailto:fbr4g4@gmail.com">fbr4g4@gmail.com</a></p>
+  </div>
+</body>
+</html>
